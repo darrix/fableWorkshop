@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>FSharp.Core</id>
+    <version>4.2.1</version>
+    <title>FSharp.Core for F# 4.1</title>
+    <authors>F# Software Foundation, Microsoft</authors>
+    <owners>https://github.com/Microsoft/visualfsharp Authors</owners>
+    <licenseUrl>https://github.com/Microsoft/visualfsharp/blob/master/License.txt</licenseUrl>
+    <projectUrl>https://github.com/Microsoft/visualfsharp</projectUrl>
+    <iconUrl>http://fsharp.org/img/logo/fsharp256.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>FSharp.Core redistributables from Visual F# 4.1.0
+    Supported Platforms:
+        .NET 4.5+           (net45)
+        netstandard1.6      (netstandard1.6)</description>
+    <summary>FSharp.Core for F# 4.1</summary>
+    <releaseNotes>FSharp.Core 4.2 (and higher versions) is the version of FSharp.Core which is jointly published by Microsoft and The F# Software Foundation. It is the version of FSharp.Core to be used for .NET Standard 2.0 or .NET Core 2.0 projects, and eventually all projects. It no longer contains PCL .dlls. This is not intended for use in PCL or Type Providers yet.
+
+Guidance for this version:
+
+* For existing packages targeting .NET Frameworks 4.0 or lower and PCLs, use FSharp.Core 4.1 or lower.
+* For Type Provider developers, use FSharp.Core 4.1 or lower until Type Providers are supported on .NET Standard 2.0
+* For existing desktop projects or libraries, prefer this version or higher if feasible.
+* For new desktop projects or libraries, use this version or higher.
+* For new (.NET Standard-based) Xamarin projects, use this version or higher.
+* For library developers, prefer this package if you can target .NET Standard 1.6 or 2.0. Multitarget to also provide a .NET Framework 4.5 .dll, if possible, to provide a wider range of targets for desktop users who cannot use .NET Standard.</releaseNotes>
+    <language>en-US</language>
+    <tags>Visual F# Compiler FSharp coreclr functional programming</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard1.6">
+        <dependency id="System.Collections" version="4.0.11" />
+        <dependency id="System.Console" version="4.0.0" />
+        <dependency id="System.Diagnostics.Debug" version="4.0.11" />
+        <dependency id="System.Diagnostics.Tools" version="4.0.1" />
+        <dependency id="System.Globalization" version="4.0.11" />
+        <dependency id="System.IO" version="4.1.0" />
+        <dependency id="System.Linq" version="4.1.0" />
+        <dependency id="System.Linq.Expressions" version="4.1.0" />
+        <dependency id="System.Linq.Queryable" version="4.0.1" />
+        <dependency id="System.Net.Requests" version="4.0.11" />
+        <dependency id="System.Reflection" version="4.1.0" />
+        <dependency id="System.Reflection.Extensions" version="4.0.1" />
+        <dependency id="System.Resources.ResourceManager" version="4.0.1" />
+        <dependency id="System.Runtime" version="4.1.0" />
+        <dependency id="System.Runtime.Extensions" version="4.1.0" />
+        <dependency id="System.Runtime.Numerics" version="4.0.1" />
+        <dependency id="System.Text.RegularExpressions" version="4.1.0" />
+        <dependency id="System.Threading" version="4.0.11" />
+        <dependency id="System.Threading.Tasks" version="4.0.11" />
+        <dependency id="System.Threading.Tasks.Parallel" version="4.0.1" />
+        <dependency id="System.Threading.Thread" version="4.0.0" />
+        <dependency id="System.Threading.ThreadPool" version="4.0.10" />
+        <dependency id="System.Threading.Timer" version="4.0.1" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
